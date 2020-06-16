@@ -1,0 +1,37 @@
+// team
+.team
+  display: flex
+  justify-content: space-around
+  &__photo
+    height: 406px
+    width: 370px
+    filter: grayscale(100%)
+    transition: 0.3s
+    &:hover
+        filter: grayscale(0)
+        transition: 0.3s
+        cursor: pointer
+    &--first
+      background-image: url('../img/team-1.jpg')
+    &--second
+      background-image: url('../img/team-2.jpg')
+    &--third
+      background-image: url('../img/team-3.jpg')
+  &__text
+    color: $grey
+    font-size: 22px
+  &__wrap
+    position: absolute
+    bottom: 10px
+    background: rgba(45, 44, 46, 0.6)
+    width: 280px
+    height: 90px
+    padding-top: 20px
+    padding-left: 20px
+    transition: 0.5s
+    &:hover
+      padding-left: 40px
+      width: 300px
+      transition: 0.5s
+
+// team END
