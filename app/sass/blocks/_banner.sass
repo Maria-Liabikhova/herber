@@ -21,13 +21,46 @@
     justify-content: space-between
     margin-bottom: 20px
   &__wrap
-    border: 1px dashed red
     width: 100%
     display: flex
     flex-direction: column
     justify-content: center
     align-items: center
-    // position: relative
+    position: relative
+    &--first
+      position: relative
+      &:after
+        content: ""
+        position: absolute
+        height: 100px
+        width: 1px
+        color: $grey
+        background-color: $grey
+        right: 0
+        top: 80px
+    &--second
+      position: relative
+      &:after
+        content: ""
+        position: absolute
+        height: 100px
+        width: 1px
+        color: $grey
+        background-color: $grey
+        right: 0
+        top: 80px
+    &--third
+      position: relative
+      &:after
+        content: ""
+        position: absolute
+        height: 100px
+        width: 1px
+        color: $grey
+        background-color: $grey
+        right: 0
+        top: 80px
+
   &__header
     color: $white
     font-size: 90px
@@ -36,16 +69,70 @@
     position: relative
     transform: translateX(-50%)
     line-height: 30px
-    // &--first
-    //   position: relative
-    //   &:before
-    //     content: ""
-    //     background-image: url('../img/cap.jpg')
-    //     background-size: 100% 100%
-    //     position: absolute
-    //     height: 150px
-    //     width: 150px
-   
+    &--first
+      position: relative
+      transform: translateX(-30%)
+      &:before
+        content: ""
+        background-image: url('../img/tick.png')
+        background-size: 100% 100%
+        position: absolute
+        height: 50px
+        width: 50px
+        top: 0
+        right: 0
+        transform: translate(100%, -50%)
+      // &:after
+      //   content: ""
+      //   position: absolute
+      //   height: 100px
+      //   width: 10px
+      //   color: $grey
+      //   background-color: $grey
+        
+    &--second
+      position: relative
+      &:before
+        content: ""
+        background-image: url('../img/camera.png')
+        background-size: 100% 100%
+        position: absolute
+        height: 80px
+        width: 80px
+        top: 0
+        right: 0
+        transform: translate(100%, -50%)
+    &--third
+      position: relative
+      transform: translateX(-30%)
+      &:before
+        content: ""
+        background-image: url('../img/lamp.png')
+        background-size: 100% 100%
+        position: absolute
+        height: 90px
+        width: 90px
+        top: 0
+        right: 0
+        transform: translate(90%, -50%)
+    &--fourth
+      position: relative
+      &:before
+        content: ""
+        background-image: url('../img/treo.png')
+        background-size: 100% 100%
+        position: absolute
+        height: 50px
+        width: 50px
+        top: 0
+        right: 0
+        transform: translate(110%, -50%)
+  &__text
+    color: $light-grey 
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.9)
+    margin-bottom: 30px
+    font-size: 30px
+    margin-bottom: 0
     
 
     
