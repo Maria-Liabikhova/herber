@@ -1,13 +1,56 @@
 // gallery
 .gallery
-  &--watermelon
   background-color: $black
-  background-image: url('../img/galley-watermelon.jpg')
-  // width: auto
-  // background-repeat: no-repeat
-  background-size: cover
-  // background-position: 0 30%
+  margin-bottom: 20px
+  background-size: 120%
+  background-position: 0, 30%
   position: relative
   height: 290px
-  // width: 360px
-// gallery END 
+  width: 360px
+  transition: 0.5s
+  display: flex
+  justify-content: center
+  align-items: center
+  &:hover
+    transition: 0.5s
+    background-size: cover
+    &:after
+      content: ""
+      transition: 0.5s
+      position: absolute
+      background-color: rgba(66, 65, 62, 0.4)
+      height: 100%
+      width: 100%
+      z-index: 1
+  &--watermelon
+    background-image: url('../img/galley-watermelon.jpg')
+  &--grape
+    background-image: url('../img/galley-grape.jpg')
+    background-size: 160%
+    background-position: 40%, 30%
+  &--orange
+    background-image: url('../img/galley-orange.jpg')
+  &__board
+    // visibility: hidden
+    height: 270px
+    width: 340px
+    border: 2px solid $white
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    &:hover
+      cursor: pointer
+      // transition: 0.5s
+      // visibility: visible
+      // height: 270px
+      // width: 340px
+      // border: 2px dashed green
+      // flex-direction: column
+      // justify-content: center
+      // align-items: center 
+  &__icon
+    height: 40px
+    width: 42px
+  
+     
+
